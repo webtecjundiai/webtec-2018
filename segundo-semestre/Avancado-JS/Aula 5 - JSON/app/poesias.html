@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Poesias - e-Literatura</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link Tags -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Scripts JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">     </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">  </script>
+    <script src="js/menuGeral.js"></script>
+</head>
+
+<body>
+    <div id="menuGeral"><!-- Menu aqui --></div>
+    <!--  -->
+    <div class="container espaco-cima">
+        <div class="row espaco-lateral">
+            <!-- Accordion começa aqui -->
+            <button class="accordion">Soneto da Fidelidade (Vinicius de Moraes)</button>
+            <div class="panel">
+                <p>
+                    "De tudo, ao meu amor serei atento
+                    <br>Antes, e com tal zelo, e sempre, e tanto 
+                    <br>Que mesmo em face do maior encanto
+                    <br>Dele se encante mais meu pensamento. 
+                    <br>Quero vivê-lo em cada vão momento
+                    <br>E em louvor hei de espalhar meu canto
+                    <br>E rir meu riso e derramar meu pranto
+                    <br>Ao seu pesar ou seu contentamento.
+                    <br>E assim, quando mais tarde me procure
+                    <br>Quem sabe a morte, angústia de quem vive
+                    <br>Quem sabe a solidão, fim de quem ama
+                    <br>Eu possa me dizer do amor (que tive):
+                    <br>Que não seja imortal, posto que é chama
+                    <br>Mas que seja infinito enquanto dure."
+                </p>
+            </div>
+
+            <button class="accordion">Via Láctea (Olavo Bilac)</button>
+            <div class="panel">
+                <p>
+                    Ora (direis) ouvir estrelas! Certo
+                    <br>Perdeste o senso!” E eu vos direi, no entanto,
+                    <br> Que, para ouvi-las, muita vez desperto
+                    <br>E abro as janelas, pálido de espanto…
+                    <br>
+                    <br>E conversamos toda a noite, enquanto
+                    <br> A Via Láctea, como um pálio aberto,
+                    <br> Cintila. E, ao vir do sol, saudoso e em pranto,
+                    <br> Inda as procuro pelo céu deserto.
+                    <br>
+                    <br> Direis agora: “Tresloucado amigo!
+                    <br> Que conversas com elas? Que sentido
+                    <br> Tem o que dizem, quando estão contigo?”
+                    <br>
+                    <br> E eu vos direi: “Amai para entendê-las!
+                    <br> Pois só quem ama pode ter ouvido
+                    <br> Capaz de ouvir e de entender estrelas.
+                </p>
+            </div>
+
+            <button class="accordion">Versos Íntimos (Augusto dos Anjos)</button>
+            <div class="panel">
+                <p>
+                     Vês?! Ninguém assistiu ao formidável
+                     <br>Enterro de tua última quimera.
+                     <br>Somente a Ingratidão - esta pantera -
+                     <br>Foi tua companheira inseparável!
+                     <br>
+                     <br>Acostuma-te a lama que te espera!
+                     <br>O Homem que, nesta terra miserável,
+                     <br>Mora entre feras, sente inevitável
+                     <br>Necessidade de também ser fera
+                     <br>
+                     <br>Toma um fósforo, acende teu cigarro!
+                     <br>O beijo, amigo, é a véspera do escarro.
+                     <br>A mão que afaga é a mesma que apedreja.
+                     <br>
+                     <br>Se a alguém causa ainda pena a tua chaga
+                     <br>Apedreja essa mão vil que te afaga.
+                     <br>Escarra nessa boca de que beija!
+                </p>
+            </div>
+            <!-- Accordion começa aqui -->
+        </div>
+    </div>
+    <!-- Script JS do Accordion -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

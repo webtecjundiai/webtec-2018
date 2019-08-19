@@ -1,0 +1,31 @@
+[ 
+    {
+        "id"    : 1,
+        "titulo": "Frase 1",
+        "texto" : "Não deixe de fazer algo bom, \n por achar que \n está fazendo pouco."
+    },
+
+    {
+        "id"    : 2,
+        "titulo": "Frase 2",
+        "texto" : "Assim como a Lua, a Vida é dividida em fases."
+    },
+
+    {
+        "id"    : 3,
+        "titulo": "Frase 3",
+        "texto" : "Aceite o que não pode mudar, mude o que não pode aceitar."
+    },
+
+    {
+        "id"    : 4,
+        "titulo": "Frase 4",
+        "texto" : "Você faz suas escolhas e as suas escolhas fazem você."
+    },
+
+    {
+        "id"    : 5,
+        "titulo": "Frase 5",
+        "texto" : "Ninguém alcança sonhos altos antes de saber a dor de cair."
+    }
+]

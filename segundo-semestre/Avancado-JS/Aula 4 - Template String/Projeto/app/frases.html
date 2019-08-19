@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>e-Literatura - Frases</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link Tags -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Scripts JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/menu.js"></script>
+</head>
+
+<body>
+    <div id="menuIndex"></div>
+    <!--  -->
+    <div class="container espaco-cima">
+        <div class="row espaco-lateral">
+            <!-- Accordion começa aqui -->
+            <button class="accordion">Frase 1</button>
+            <div class="panel">
+                <p>- Não deixe de fazer algo bom, por achar que está fazendo pouco.</p>
+            </div>
+
+            <button class="accordion">Frase 2</button>
+            <div class="panel">
+                <p>- Assim como a Lua, a Vida é dividida em fases.</p>
+            </div>
+
+            <button class="accordion">Frase 3</button>
+            <div class="panel">
+                <p>- Aceite o que não pode mudar, mude o que não pode aceitar.</p>
+            </div>
+
+            <button class="accordion">Frase 4</button>
+            <div class="panel">
+                <p>- Você faz suas escolhas e as suas escolhas fazem você.</p>
+            </div>
+
+            <button class="accordion">Frase 5</button>
+            <div class="panel">
+                <p>- Ninguém alcança sonhos altos antes de saber a dor de cair.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Script JS do Accordion -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

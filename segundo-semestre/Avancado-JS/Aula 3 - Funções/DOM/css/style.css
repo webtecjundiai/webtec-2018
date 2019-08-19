@@ -1,0 +1,17 @@
+body {
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+
+.bloco1, .bloco2, .bloco3, .bloco4, .bloco5 {
+
+    color: #e9f3ff;
+    text-align: center;
+
+}
+
+.espaco-cima
+{
+    padding: 5%;
+}

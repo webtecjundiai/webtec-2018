@@ -1,0 +1,4 @@
+# Ignora os arquivos de pasta do macOS
+.DStore
+.DS_Store
+.vscode/settings.json

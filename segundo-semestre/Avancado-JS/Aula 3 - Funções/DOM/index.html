@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM - Acessando Elementos [aula-3]</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link Tags -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts JS -->
+    <script src="js/dom.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row espaco-cima">
+            <h2 class="titulo">Bem vindo à 3ª aula do Módulo Avançado</h2>
+        </div>
+        <div class="row">
+            <div class="col bloco1">
+                <h1 id="bandaFavorita">Iron Maiden</h1>
+            </div>
+
+            <div class="col bloco2 carrosFavoritos">
+                Dodge Charger R/T 1971
+            </div>
+            
+            <div class="col bloco2 carrosFavoritos">
+                Ford Mustang GT 1968
+            </div>
+            
+            <div class="col bloco4">
+                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                    Data Atual</button>
+                <p id="demo"></p>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst">Link do Exemplo</a>
+            </div>
+            
+            <div class="col bloco5 heroiFavorito">
+                Wolverine ///
+            </div>
+        </div>
+    </div>
+</body>
+</html>
